@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+body {
+    font-family: "Microsoft YaHei";
+}
+
+.clearfix::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* 头部第一行 */
+
+header {
+    height: 177px;
+}
+
+.top-line {
+    height: 32px;
+    background-color: #005faf;
+}
+
+.top-line li {
+    display: inline;
+}
+
+.top-line a {
+    font-size: 14px;
+    color: #eeeeee;
+    margin: 0 10px;
+    line-height: 32px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* 头部第二行 */
+
+.logo-search {
+    height: 100px;
+    background-image: linear-gradient(to bottom, rgb(245, 67, 67), rgba(244, 78, 78, 0.9),rgb(248,141,141),rgba(250, 190, 190, 0.57));
+}
+
+.logo-search img {
+    height: 80px;
+    padding: 10px 0;
+}
+
+.map {
+    float: right;
+    width: 810px;
+    height: 100px;
+    background: url(img/lianghui.png) no-repeat;
+    background-size: 810px 100px;
+}
+
+.map > a {
+    display: inline-block;
+    width: 615px;
+    height: 100px;
+}
+
+.search {
+    float: right;
+    margin-top: 35px;
+    margin-right: 10px;
+}
+
+.search input:first-child {
+    float: left;
+    width: 110px;
+    height: 18px;
+    border: 1px solid #b1b1b1;
+    border-right: 0;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.submit {
+    width: 46px;
+    height: 30px;
+    border: none;
+    background-image: url(img/search.png);
+    cursor: pointer;
+}
+
+/* 头部第三行 */
+
+nav {
+    height: 45px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    color: #000;
+}
+
+/* 轮播图 */
+
+.swiper {
+    position: relative;
+    width: 1300px;
+    height: 480px;
+    margin: 0 auto;
+    background-color: pink;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.prev {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
+
+/* section section-left section-right*/
+
+.section {
+    margin-top: 20px;
+}
+
+.section h1 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 42px;
+    border-bottom: 2px solid #006c9c;
+    margin-bottom: 15px;
+}
+
+.section h3 {
+    float: right;
+    font-weight: normal;
+    line-height: 42px;
+}
+
+.section h3 a {
+    font-size: 16px;
+    color: #005aa0;
+}
+
+.section a:hover {
+    color: #005aa0;
+}
+
+.section.section-left {
+    float: left;
+    width: 60%;
+}
+
+.section.section-right {
+    float: left;
+    width: 38%;
+    margin-left: 2%;
+}
+
+/* 华电头条 */
+
+.toutiao-pic {
+    display: inline-block;
+}
+
+.toutiao-pic img {
+    width: 300px;
+    height: 220px;
+}
+
+.content {
+    float: right;
+    width: 405px;
+}
+
+.content .title {
+    display: block;
+    height: 60px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.content .title a {
+    color: #333;
+}
+
+.content .date {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    text-align: right;
+    color: #333;
+    font-family: Georgia, sans-serif;
+    padding-right: 10px;
+}
+
+.summary {
+    display: block;
+    height: 125px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #666666;
+}
+
+/* 学术活动 */
+
+.notice li{
+    border-bottom: 1px solid lightgray;
+    line-height: 34px;
+    margin-top: 11px;
+}
+
+.title {
+    display: inline-block;
+    width: 370px;
+    font-size: 15px;
+    vertical-align: top;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.title a {
+    color: rgb(51, 51, 51);
+}
+
+.notice .date {
+    float: right;
+    font-size: 14px;
+    line-height: 30px;
+    columns: #333;
+    font-family: Georgia, sans-serif;
+}
+
+/* 通知公告 */
+
+.key-access {
+    margin-top: 20px;
+}
+
+.list-tab {
+    float: left;
+    width: 163px;
+}
+
+.list-tab li {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.list-tab li:nth-child(-n+2) {
+    border-top: 1px solid lightgray;
+}
+
+.key-access > img {
+    width: 293px;
+    height: 163px;
+}
+
+/* 链接 */
+
+.quick-link {
+    margin-top: 20px;
+}
+
+.quick-link li {
+    float: left;
+}
+
+/* 尾部 */
+
+footer {
+    margin-top: 20px;
+    height: 120px;
+    padding: 15px 0;
+    background-color: #1066B0;
+}
+
+.logo {
+    float: left;
+    border-left: 1px solid rgba(255, 255, 255, .2);
+    padding: 11px 104px 12px 104px;
+}
+
+.copyright {
+    float: left;
+    width: 560px;
+    padding: 0;
+    text-indent: 120px;
+    border-left: 1px solid rgba(255, 255, 255, .2);
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.copyright p {
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 24px;
+}
+
+.copyright a {
+    color: #fff;
+}
+
+.share {
+    float: left;
+    width: 240px;
+    padding: 0 39px;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.share li {
+    float: left;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+}
