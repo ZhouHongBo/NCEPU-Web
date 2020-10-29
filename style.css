@@ -56,6 +56,21 @@ header {
     float: left;
 }
 
+.icon-weibo,
+.icon-wechat {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(img/social_icon.png);
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.icon-wechat {
+    /* 向左移动20px */
+    background-position: -20px 0;
+}
+
 .right {
     float: right;
 }
@@ -361,4 +376,58 @@ footer {
     width: 80px;
     height: 60px;
     text-align: center;
+}
+
+.share a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/share_icon.png);
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.weibo:hover {
+    background-position:0 -70px;
+}
+
+.moments {
+    background-position: -35px 0;
+}
+
+.moments:hover {
+    background-position: -35px -70px;
+}
+
+.qq {
+    background-position: -70px 0;
+}
+
+.qq:hover {
+    background-position: -70px -70px;
+}
+
+.tencent-weibo {
+    background-position: 0 -35px;
+}
+
+.tencent-weibo:hover {
+    background-position: 0 -105px;
+}
+
+.qzone {
+    background-position: -35px -35px;
+}
+
+.qzone:hover {
+    background-position: -35px -105px;
+}
+
+.renren {
+    background-position: -70px -35px;
+}
+
+.renren:hover {
+    background-position: -70px -105px;
 }
