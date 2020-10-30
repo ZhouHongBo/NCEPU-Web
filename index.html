@@ -22,7 +22,7 @@
                         <li><a href="#" title="华北电力大学微信公众号" class="icon-wechat"></a></li>
                     </ul>
                     <ul class="right">
-                        <li><a href="#">"十四五"规划专题</a></li>
+                        <li><a href="#">“十四五”规划专题</a></li>
                         <li><a href="#">防控专题</a></li>
                         <li><a href="#">保定校区</a></li>
                         <li><a href="#">English</a></li>
@@ -60,10 +60,19 @@
         </nav>
     </header>
     <!-- 轮播图 -->
-    <div class="swiper clearfix">
-        <img src="img/lunbo0.jpg">
-        <div class="prev"><img src="img/prev.png"></div>
-        <div class="next"><img src="img/next.png"></div>
+    <div class="app swiper clearfix">
+        <img :src="imgList[idx]">
+        <div class="prev" @click="prev"><img src="img/prev.png"></div>
+        <div class="next" @click="next"><img src="img/next.png"></div>
+        <ul class="pagination">
+            <li v-for="(val, index) in imgList" :class="{active:index===idx}"></li>
+        </ul>
+        <div class="description">
+            {{description[idx]}}
+        </div>
+        <div class="more">
+            <a href="#">more>></a>
+        </div>
     </div>
     <!-- 华电头条 学术活动 -->
     <div class="w clearfix">
@@ -263,6 +272,10 @@
             </div>
         </div>
     </footer>
+    <!-- 脚本 -->
+    <script src="vue.js"></script>
+    <!-- <script src="vue.min.js"></script> -->
+    <script src="main.js"></script>
 </body>
 
 </html>

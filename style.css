@@ -6,6 +6,7 @@
 
 body {
     font-family: "Microsoft YaHei";
+    line-height: 1;
 }
 
 .clearfix::after {
@@ -84,7 +85,8 @@ header {
 
 .logo-search img {
     height: 80px;
-    padding: 10px 0;
+    padding: 10px 0 10px 10px;
+
 }
 
 .map {
@@ -129,6 +131,7 @@ header {
 
 nav {
     height: 45px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
 nav ul {
@@ -146,6 +149,7 @@ nav a {
     height: 45px;
     line-height: 45px;
     color: #000;
+    letter-spacing: 1px;
 }
 
 /* 轮播图 */
@@ -172,6 +176,53 @@ nav a {
 
 .next {
     right: 30px;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.pagination li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #000;
+    opacity: 0.2;
+    margin: 0 5px;
+}
+
+.active {
+    opacity: 1 !important;
+    background-color: #007aff !important;
+}
+
+.description {
+    position: absolute;
+    bottom: 10%;
+    left: 70px;
+    padding: 14px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 27px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.more {
+    position: absolute;
+    bottom: 7%;
+    right: 0;
+    padding: 5px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.more a {
+    color: #000;
 }
 
 /* section section-left section-right*/
