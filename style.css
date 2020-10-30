@@ -1,3 +1,5 @@
+/* 字体图标 */
+
 @font-face {
     font-family: 'icomoon';
     src:  url('fonts/icomoon.eot?7sv1ya');
@@ -14,6 +16,8 @@ i {
     font-family: 'icomoon';
     font-style: normal;
 }
+
+/* 通用 */
 
 * {
     margin: 0;
@@ -191,22 +195,69 @@ nav {
     border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
-nav ul {
-    display: flex;
+.navbar-bg {
+    position: relative;
+    height: 365px;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* z-index: 1; */
 }
 
-nav li {
+.navbar-content {
+    position: relative;
+}
+
+.navbar-content-box {
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+.navbar-content-box dl {
     display: inline;
     flex: 1;
     text-align: center;
 }
 
-nav a {
+.navbar-content-box dt a {
     display: inline-block;
     height: 43px;
     line-height: 43px;
     color: #000;
     letter-spacing: 1px;
+}
+
+.navbar-content-box dd {
+    height: 300px;
+    padding: 11px 0 10px 0;
+    border-left: 1px solid #d7d7d7;
+}
+
+.navbar-content-box dl:last-child dd {
+    border-right: 1px solid #d7d7d7;
+}
+
+.navbar-content-box div {
+    height: 30px;
+}
+
+.navbar-content-box dd a {
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color:#666;
+}
+
+.navbar-content-box dd a:hover {
+    color: #005aa0;
+    border-bottom: 2px solid #005aa0;
+}
+
+.navbar-content-box dl:hover dt {
+    background: #3c8cd7;
+}
+
+.navbar-content-box dl:hover dd {
+    background-color: rgba(60, 170, 250, .5);
 }
 
 /* 轮播图 */

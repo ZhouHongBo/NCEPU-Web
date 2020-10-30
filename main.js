@@ -48,3 +48,13 @@ icon_wechat.onmouseover = function () {
 icon_wechat.onmouseout = function () {
     qrcode.style.display = "none";
 };
+
+// 下拉菜单
+let navbar_content_box = document.getElementsByClassName("navbar-content-box")[0];
+let navbar_bg = document.getElementsByClassName("navbar-bg")[0];
+navbar_content_box.onmouseover = function () {
+    navbar_bg.style.zIndex = 1;
+}
+navbar_content_box.onmouseout = function () {
+    navbar_bg.style.zIndex = 0;
+}
