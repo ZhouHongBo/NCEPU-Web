@@ -39,6 +39,7 @@
                     <form class="search">
                         <input type="text">
                         <input type="submit" value="" class="submit">
+                        <i></i>
                     </form>
                 </div>
                 
@@ -209,17 +210,21 @@
             <div class="key-access" id="app2">
                 <div class="list-tab">
                     <ul>
-                        <li @mouseover="idx=0">
-                            <img src="img/1.png">
+                        <li @mouseover="idx=0" :class="{current:idx==0}">
+                            <i></i>
+                            <span>专题网站</span>
                         </li>
-                        <li @mouseover="idx=1">
-                            <img src="img/2.png">
+                        <li @mouseover="idx=1" :class="{current:idx==1}">
+                            <i></i>
+                            <span>数字华电</span>
                         </li>
-                        <li @mouseover="idx=2">
-                            <img src="img/3.png">
+                        <li @mouseover="idx=2" :class="{current:idx==2}">
+                            <i></i>
+                            <span>办公OA</span>
                         </li>
-                        <li @mouseover="idx=3">
-                            <img src="img/4.png">
+                        <li @mouseover="idx=3" :class="{current:idx==3}">
+                            <i></i>
+                            <span>学风建设</span>
                         </li>
                     </ul>
                 </div>
@@ -231,19 +236,24 @@
     <div class="w quick-link clearfix">
         <ul>
             <li>
-                <img src="img/a.png">
+                <i></i>
+                <span>服务导航</span>
             </li>
             <li>
-                <img src="img/b.png">
+                <i></i>
+                <span>图书馆</span>
             </li>
             <li>
-                <img src="img/c.png">
+                <i></i>
+                <span>校友会</span>
             </li>
             <li>
-                <img src="img/d.png">
+                <i></i>
+                <span>基金会</span>
             </li>
             <li>
-                <img src="img/e.png">
+                <i></i>
+                <span>邮箱</span>
             </li>
         </ul>
     </div>

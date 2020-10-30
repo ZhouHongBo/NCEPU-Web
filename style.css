@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?7sv1ya');
+    src:  url('fonts/icomoon.eot?7sv1ya#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?7sv1ya') format('truetype'),
+      url('fonts/icomoon.woff?7sv1ya') format('woff'),
+      url('fonts/icomoon.svg?7sv1ya#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+i {
+    font-family: 'icomoon';
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -104,6 +121,7 @@ header {
 }
 
 .search {
+    position: relative;
     float: right;
     margin-top: 35px;
     margin-right: 10px;
@@ -123,7 +141,19 @@ header {
     width: 46px;
     height: 30px;
     border: none;
-    background-image: url(img/search.png);
+    cursor: pointer;
+}
+
+.search i {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 46px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background: #006c9c;
     cursor: pointer;
 }
 
@@ -366,9 +396,34 @@ nav a {
     border-top: 1px solid lightgray;
 }
 
+.list-tab i {
+    display: block;
+    text-align: center;
+    color: #aaa;
+    font-size: 32px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+}
+
+.list-tab span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
+
 .key-access > img {
     width: 293px;
     height: 163px;
+}
+
+.current i,
+.current span {
+    color: #fff;
+}
+
+.current {
+    background: #006c9c;
 }
 
 /* 链接 */
@@ -377,8 +432,66 @@ nav a {
     margin-top: 20px;
 }
 
+.quick-link ul {
+    display: flex;
+}
+
+.quick-link li:nth-child(1) {
+    background-color: #58b530;
+}
+
+.quick-link li:nth-child(1):hover {
+    flex: 1.4;
+}
+
+.quick-link li:nth-child(2) {
+    background-color: #fabe10;
+}
+
+.quick-link li:nth-child(2):hover {
+    flex: 1.4;
+}
+
+.quick-link li:nth-child(3) {
+    background-color: #f18200;
+}
+
+.quick-link li:nth-child(3):hover {
+    flex: 1.4;
+}
+
+.quick-link li:nth-child(4) {
+    background-color: #dd2b37;
+}
+
+.quick-link li:nth-child(4):hover {
+    flex: 1.4;
+}
+
+.quick-link li:nth-child(5) {
+    background-color: #982a8b;
+}
+
+.quick-link li:nth-child(5):hover {
+    flex: 1.4;
+}
+
 .quick-link li {
-    float: left;
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.quick-link i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.quick-link span {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 10px;
 }
 
 /* 尾部 */
