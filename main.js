@@ -1,5 +1,5 @@
 var app = new Vue({
-    el: ".app",
+    el: "#app",
     data: {
         imgList: ["img/lunbo0.jpg","img/lunbo1.png","img/lunbo2.jpg","img/lunbo3.jpg",
                   "img/lunbo4.jpg","img/lunbo5.jpg","img/lunbo6.jpg","img/lunbo7.jpg",
@@ -28,3 +28,11 @@ var app = new Vue({
         }
     }
 });
+
+var app2 = new Vue({
+    el: "#app2",
+    data: {
+        imgList: ["img/fsxx.jpg","img/xnmh.jpg","img/bgpt.jpg","img/xfjs.jpg"],
+        idx: 0
+    }
+})

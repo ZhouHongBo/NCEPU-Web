@@ -60,7 +60,7 @@
         </nav>
     </header>
     <!-- 轮播图 -->
-    <div class="app swiper clearfix">
+    <div class="swiper clearfix" id="app">
         <img :src="imgList[idx]">
         <div class="prev" @click="prev"><img src="img/prev.png"></div>
         <div class="next" @click="next"><img src="img/next.png"></div>
@@ -206,24 +206,24 @@
                     <span class="date">04-24</span>
                 </li>
             </ul>
-            <div class="key-access">
+            <div class="key-access" id="app2">
                 <div class="list-tab">
                     <ul>
-                        <li>
+                        <li @mouseover="idx=0">
                             <img src="img/1.png">
                         </li>
-                        <li>
+                        <li @mouseover="idx=1">
                             <img src="img/2.png">
                         </li>
-                        <li>
+                        <li @mouseover="idx=2">
                             <img src="img/3.png">
                         </li>
-                        <li>
+                        <li @mouseover="idx=3">
                             <img src="img/4.png">
                         </li>
                     </ul>
                 </div>
-                <img src="img/fsxx.jpg">
+                <img :src="imgList[idx]">
             </div>
         </div>
     </div>
