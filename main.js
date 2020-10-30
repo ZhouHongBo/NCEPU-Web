@@ -1,3 +1,4 @@
+// 轮播图
 var app = new Vue({
     el: "#app",
     data: {
@@ -29,10 +30,21 @@ var app = new Vue({
     }
 });
 
+// 鼠标悬停切换图片
 var app2 = new Vue({
     el: "#app2",
     data: {
         imgList: ["img/fsxx.jpg","img/xnmh.jpg","img/bgpt.jpg","img/xfjs.jpg"],
         idx: 0
     }
-})
+});
+
+// 鼠标悬停出现二维码
+let icon_wechat = document.getElementsByClassName("icon-wechat")[0];
+let qrcode = document.getElementsByClassName("qrcode")[0];
+icon_wechat.onmouseover = function () {
+    qrcode.style.display = "block";
+};
+icon_wechat.onmouseout = function () {
+    qrcode.style.display = "none";
+};

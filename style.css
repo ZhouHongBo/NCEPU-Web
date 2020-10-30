@@ -55,6 +55,7 @@ header {
 }
 
 .top-line {
+    position: relative;
     height: 32px;
     background-color: #005faf;
 }
@@ -87,6 +88,32 @@ header {
 .icon-wechat {
     /* 向左移动20px */
     background-position: -20px 0;
+}
+
+.qrcode {
+    display: none;
+    position: absolute;
+    top: 43px;
+    left: 60px;
+    z-index: 1;
+}
+
+.qrcode img {
+    height: 152px;
+    width: 152px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.qrcode div {
+    position: absolute;
+    top: -16px;
+    left: 76px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #fff;
 }
 
 .right {
